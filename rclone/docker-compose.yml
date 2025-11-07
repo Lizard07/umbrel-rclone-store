@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  rclone:
+    image: rclone/rclone:latest
+    container_name: rclone
+    restart: unless-stopped
+    command: >
+      rcd --rc-web-gui --rc-addr=:5572 --rc-serve
+    ports:
+      - "5572:5572"
+    environment:
+      - TZ=Europe/Berlin
+    volumes:
+      - /data/umbrel-os/home/umbrel/umbrel/app-data/rclone/config:/config/rclone
+      - /data/umbrel-os/home/umbrel/umbrel/home/Downloads/Plex:/plex
