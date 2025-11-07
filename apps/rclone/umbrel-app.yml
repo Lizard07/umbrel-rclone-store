@@ -1,0 +1,19 @@
+manifestVersion: 1
+id: "rclone"
+category: "Utilities"
+name: "rclone"
+version: "1.0.0"
+tagline: "Mount and manage your cloud storage"
+description: >
+  rclone für Umbrel — mountet und verwaltet deine Cloud-Speicher
+  direkt über das Umbrel-Interface mit WebGUI.
+developer: "rclone community"
+website: "https://rclone.org"
+repo: "https://github.com/rclone/rclone"
+support: "https://forum.rclone.org"
+port: 5572
+gallery:
+  - https://rclone.org/img/rclone-120x120.png
+releaseNotes: >
+  Erste inoffizielle Version für Umbrel-Community-App-Store.
+path: ""
