@@ -4,6 +4,10 @@ services:
   rclone:
     image: rclone/rclone:latest
     container_name: rclone
+    cap_add:
+      - SYS_ADMIN
+    devices:
+      - /dev/fuse
     restart: unless-stopped
     command: >
       rcd --rc-web-gui --rc-addr=:5572 --rc-user=umbrel --rc-pass=umbrel
