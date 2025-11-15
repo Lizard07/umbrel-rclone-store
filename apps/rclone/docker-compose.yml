@@ -17,4 +17,4 @@ services:
       - TZ=Europe/Berlin
     volumes:
       - /data/umbrel-os/home/umbrel/umbrel/app-data/rclone/config:/config/rclone
-      - /data/umbrel-os/home/umbrel/umbrel/home/Downloads/Plex:/plex
+      - /home/umbrel/umbrel/home/Downloads/Plex:/plex
